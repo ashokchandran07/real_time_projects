@@ -89,6 +89,7 @@
 
 	#LOGIN COMPANY
 	if (isset($_POST['login_company'])) {
+		echo "<script type='text/javascript'>alert('Entered in company function');</script>";
 		$company_name = mysqli_real_escape_string($db, $_POST['company_name']);
 		$password = mysqli_real_escape_string($db, $_POST['assword']);
 		if (empty($company_name)) {
