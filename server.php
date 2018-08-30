@@ -91,7 +91,7 @@
 	if (isset($_POST['login_company'])) {
 		echo "<script type='text/javascript'>alert('Entered in company function');</script>";
 		$company_name = mysqli_real_escape_string($db, $_POST['company_name']);
-		$password = mysqli_real_escape_string($db, $_POST['assword']);
+		$password = mysqli_real_escape_string($db, $_POST['password']);
 		if (empty($company_name)) {
 			array_push($errors, "Company Username is required");
 		}
@@ -108,7 +108,7 @@
 				echo "<script type='text/javascript'>alert('You are loggned in as company user');</script>";
 				//$_SESSION['company_name'] = $company_name;
 				//$_SESSION['success'] = "You are now logged in";
-				include 'company.html';
+				include 'index123.html';
 			}
 			else {
 				array_push($errors, "Wrong username/password combination");
