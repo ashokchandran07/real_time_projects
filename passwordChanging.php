@@ -1,4 +1,5 @@
 <?php
+		echo "<script type='text/javascript'>alert('Entered in company function');</script>";
 $company_name = "";
 $email    = "";
 $errors = array(); 
