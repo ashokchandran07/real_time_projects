@@ -55,9 +55,9 @@ $i=1;
                 $array_name[$i]=$row["name"];
                 $sql3="UPDATE stu_skill SET  project_id=$projectid where stu_id=$array_id[$i]";
                 mysqli_query($conn, $sql3);
-                $i++;
-                
-             }
+                $i=$i+1;
+                    
+            }
              
                         
             }
