@@ -60,7 +60,7 @@
 </body>
 </html>
 <?php
-		echo "<script type='text/javascript'>alert('Entered in company function');</script>";
+echo "<script type='text/javascript'>alert('Entered in company function');</script>";
 $company_name = "";
 $email    = "";
 $errors = array(); 
@@ -71,20 +71,18 @@ $db = mysqli_connect('localhost', 'root', '', 'ucproject');
 if (isset($_POST['pass_change'])) {
     $password = mysqli_real_escape_string($db, $_POST['password']);
     $new_password = mysqli_real_escape_string($db, $_POST['new_password']);
-                    //$Password = md5($password);
-                    //$New_password = md5($new_password);
-                    $query = "SELECT * FROM registeru_table WHERE user_name='dhaya' password='$password'";
-                    $results = mysqli_query($db, $query);
-                    $row = mysqli_num_rows($results);
-                    echo "<script type='text/javascript'>alert($password);</script>";
-                    if($row == 1)
-                    {
-                        echo "<script type='text/javascript'>alert('Confirm to Save the change');</script>";
-                        $pcquery = "UPDATE registeru_table SET password='$new_password' WHERE password='$password'";
-                        if(mysqli_query($db,$pcquery))
-                        {
-                            echo "<script type='text/javascript'>alert('Password changed successfully');</script>";
-                        }
-                    }
+	$query = "SELECT password FROM registeru_table WHERE user_name='gk' AND password=$password";
+	//                    $results = mysqli_query($db,$query) or die('Query failed: ' . mysql_error());
+						if ( mysqli_num_rows($results) > 0 ) {
+						echo "<script type='text/javascript'>alert($password);</script>";
+						if($row=mysqli_fetch_assoc($results))
+						{
+							echo "<script type='text/javascript'>alert('Confirm to Save the change');</script>";
+							$pcquery = "UPDATE registeru_table SET password='$new_password' WHERE password='$password'";
+							if(mysqli_query($db,$pcquery))
+							{
+								echo "<script type='text/javascript'>alert('Password changed successfully');</script>";
+							}
+						}}
                 }
 ?>
