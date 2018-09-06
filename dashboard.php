@@ -58,7 +58,7 @@ endwhile;*/
   //              echo $p_desc_array[1];
                 echo "<p>".$p_desc."</p>";
                 ?>
-            <h4>
+            <h4></h4>
                 Prerequisites:</h4>
                 <?php 
     //            echo $p_skills_array[1];
