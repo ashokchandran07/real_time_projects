@@ -38,12 +38,7 @@ $result = $conn->query($sql4);
 
     }
 $sql2="SELECT project_id FROM project_details ";
-//$query1="CREATE TABLE newtableName LIKE oldTableName"; 
-mysqli_query($con,$query1);
-$qeury2="INSERT Updated SELECT * FROM stu_skill ORDER BY skill_points DESC";
-mysqli_query($con,$query1);
-//$sql1="SELECT * FROM stu_skill GROUP BY name ASC ORDER BY skill_points DESC ";
-$sql1="SELECT * FROM stu_skill";
+$sql1="SELECT * FROM stu_skill GROUP BY name ASC ORDER BY skill_points DESC ";
 $result = $conn->query($sql1);
 $array_id=[];
 $array_name=[""];
@@ -51,18 +46,18 @@ $array_name=[""];
 $i=1;
     if ($result->num_rows >0) {
         
-            while( ($row = $result->fetch_assoc()) && ($count!=$number)): 
+            while( ($row = $result->fetch_assoc()) && ($count!=$number)) 
             {                  
-                echo "id: " .$row["id"] ."<br>";
-                $count=$count+1;
+                
+                 echo "id: " .$row["id"] ."<br>";
+               $count=$count+1;
                 $array_id[$i]= $row["id"];
                 $array_name[$i]=$row["name"];
                 $sql3="UPDATE stu_skill SET  project_id=$projectid where stu_id=$array_id[$i]";
                 mysqli_query($conn, $sql3);
-                $i=$i+1;
-                    
-            }
-        endwhile;
+                $i++;
+                
+             }
              
                         
             }

@@ -108,7 +108,7 @@
 				echo "<script type='text/javascript'>alert('You are loggned in as company user');</script>";
 				//$_SESSION['company_name'] = $company_name;
 				//$_SESSION['success'] = "You are now logged in";
-				include 'index123.html';
+				include 'index123.php';
 			}
 			else {
 				array_push($errors, "Wrong username/password combination");
