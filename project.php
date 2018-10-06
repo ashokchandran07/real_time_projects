@@ -10,7 +10,7 @@ $p_skills_array=[""];
 
 
 // connect to database
-$db = mysqli_connect('localhost', 'root', '', 'ucproject');
+$db = mysqli_connect('localhost', 'root', '', 'enterprise');
 //$query = "SELECT project_id FROM stu_skill WHERE name='ashok'";
 //$results = mysqli_query($db,$query) or die('Query failed: ' . mysql_error());
 //$value = mysqli_fetch_assoc($results);
@@ -44,25 +44,25 @@ endwhile;*/
 <html>
     <body>
         <div>
-            <h4>
+            <h4 style='color:white'>
                 Project Details
             </h4>
-            <h4>
+            <h4 style='color:white'>
                 Name:</h4><?php 
 //                echo $p_name_array[1];
-                echo "<p>".$p_name."</p>";
+                echo "<p style='color:white'>".$p_name."</p>";
                 ?>
-            <h5>
+            <h5 style='color:white'>
                 Project description:</h5>
                 <?php 
   //              echo $p_desc_array[1];
-                echo "<p>".$p_desc."</p>";
+                echo "<p style='color:white'>".$p_desc."</p>";
                 ?>
-            <h4></h4>
+            <h4 style='color:white'>
                 Prerequisites:</h4>
                 <?php 
     //            echo $p_skills_array[1];
-                echo "<p>".$p_skill."</p>";
+                echo "<p style='color:white'>".$p_skill."</p>";
                 ?>
 <!--            <h5>
                 Python Scripting , DBMS

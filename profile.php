@@ -10,13 +10,13 @@ $p_skills_array=[""];
 
 
 // connect to database
-$db = mysqli_connect('localhost', 'root', '', 'enterprise');
+$db = mysqli_connect('localhost', 'root', '', 'ucproject');
 $query = "SELECT project_id FROM stu_skill WHERE name='ashok'";
-$results = mysqli_query($db,$query) or die('Query failed: ' . mysql_error());
+//$results = mysqli_query($db,$query) or die('Query failed: ' . mysql_error());
 //$value = mysqli_fetch_assoc($results);
 $value=4;
 //echo $result."Result value";
-$query1 = "SELECT * FROM registeru_table WHERE id='4'";
+$query1 = "SELECT * FROM registeru_table WHERE id='1'";
 $results1 = mysqli_query($db,$query1) or die('Query failed: ' . mysql_error());
 if ( ($c = mysqli_num_rows($results1)) > 0 ) {
    // echo "number of rows = ".$c;
@@ -26,68 +26,48 @@ if ( ($c = mysqli_num_rows($results1)) > 0 ) {
             $p_college = $row['college'];
             $p_city = $row['city'];
             $p_pincode = $row['pincode'];
-            $p_skills = $row['skill-set'];
+            $p_skills = $row['skill_set'];
             $p_area = $row['area_of_interest'];
-            //array_push($p_name_array,$row['project_name']);
-            //array_push($p_desc_array,$row['project_description']);
-            //array_push($p_skills_array,$row['skillset']);
         }
     endwhile;
 }
 $record_count=count($p_name_array);
-/*while($record_count!=0):
-    {
-        if($p_name_array[$record_count]=='ashok'){
-
-        }
-        $record_count--;
-    }
-endwhile;*/
 ?>
 <html>
     <body>
         <div>
-            <h4>
+            <h4 style='color:white'>
                 Profile Details
             </h4>
-            <h4>
+            <h4 style='color:white'>
                 Name :</h4><?php 
-//                echo $p_name_array[1];
-                echo "<p>".$p_name."</p>";
+                echo "<p style='color:white'>".$p_name."</p>";
                 ?>
-            <h5>
+            <h5 style='color:white'>
                 College Name :</h5>
                 <?php 
-  //              echo $p_college[1];
-                echo "<p>".$p_desc."</p>";
+                echo "<p style='color:white'>".$p_college."</p>";
                 ?>
-            <h4>
+            <h4 style='color:white'>
                 City :</h4>
                 <?php 
-    //            echo $p_skills_array[1];
-                echo "<p>".$p_city."</p>";
+                echo "<p style='color:white'>".$p_city."</p>";
                 ?>
-                <h4>
+                <h4 style='color:white'>
                 Pin-Code :</h4>
                 <?php 
-    //            echo $p_skills_array[1];
-                echo "<p>".$p_pin."</p>";
+                echo "<p style='color:white'>".$p_pincode."</p>";
                 ?>
-                <h4>
+                <h4 style='color:white'>
                 Area-Of-interest :</h4>
                 <?php 
-    //            echo $p_skills_array[1];
-                echo "<p>".$p_area."</p>";
+                echo "<p style='color:white'>".$p_area."</p>";
                 ?>
-                <h4>
+                <h4 style='color:white'>
                 Skill-set :</h4>
                 <?php 
-    //            echo $p_skills_array[1];
-                echo "<p>".$p_skill."</p>";
+                echo "<p style='color:white'>".$p_skills."</p>";
                 ?>
-<!--            <h5>
-                Python Scripting , DBMS
-            </h5>
--->    </div>
+</div>
     </body>
 </html>
