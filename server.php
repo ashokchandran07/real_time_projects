@@ -67,17 +67,14 @@
 			array_push($errors, "Password is required");
 		}
 		if (count($errors) == 0) {
-//			$password = md5($password);
+			//$password = md5($password);
 			$query = "SELECT * FROM registeru_table WHERE user_name='$user_name' AND password='$password'";
 			$results = mysqli_query($db, $query);
 			$row=mysqli_num_rows($results);
 			echo "<script type='text/javascript'>alert($password+'  '+$user_name);</script>";
-			//echo "<script type='text/javascript'>alert('Entered in +$row+' '+$user_name+' '+$password+ function');</script>";
 			if($row==1)
 			{
 				echo "<script type='text/javascript'>alert('You are loggned in as user');</script>";
-				//$_SESSION['company_name'] = $company_name;
-				//$_SESSION['success'] = "You are now logged in";
 				include 'student.html';
 			}
 			else {
@@ -98,16 +95,17 @@
 		if (empty($password)) {
 			array_push($errors, "Password is required");
 		}
+		echo "<script type='text/javascript'>alert('Entered 1');</script>";
 		if (count($errors) == 0) {
 			$password = md5($password);
 			$query = "SELECT * FROM register_table WHERE company_name='$company_name' AND password='$password'";
+			echo "<script type='text/javascript'>alert('Entered 2');</script>";
 			$results = mysqli_query($db, $query);
+			echo "<script type='text/javascript'>alert('Entered 3');</script>";
 			$row=mysqli_num_rows($results);
 			if($row==1)
 			{
 				echo "<script type='text/javascript'>alert('You are loggned in as company user');</script>";
-				//$_SESSION['company_name'] = $company_name;
-				//$_SESSION['success'] = "You are now logged in";
 				include 'index123.php';
 			}
 			else {

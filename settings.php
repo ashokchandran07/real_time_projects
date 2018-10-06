@@ -6,6 +6,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<style>
+		body{
+			background-image:url("images1/settings.gif");
+			background-repeat: no-repeat;
+			background-size: 200px 300px;
+			background-position: center;
+			background-color: aliceblue;
+		}
 		p{
 			color: blueviolet;
 			font-family: sans-serif;
