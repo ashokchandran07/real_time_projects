@@ -9,7 +9,7 @@
         h1{margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit}
         </style>
     </head>
-    <body>
+    <body style="">
         <div class="card">
 
     <h5 class="card-header info-color white-text text-center py-4">
@@ -18,7 +18,7 @@
 
   <!--Card content-->
   <div class="card-body px-lg-5 pt-0" background="/06.jpg">
-            <form class="text-center" method="post" action="insert.php">
+            <form method="post" action="insert.php">
             <div class="form-group">
             <h3>   Project Title</h3><br>
             <input type="text" class="form-control mx-sm-3" name="pro_title" placeholder="project name" required><br>
@@ -35,10 +35,10 @@
             <input type="date" class="form-control mx-sm-3" name="end_date" required><br><br><br>
             <center><button class="btn btn-default" type="submit " name="submit">submit</button></center>
        
-            <center><a href="www.google.co.in"><button style="type:button; class:btn btn-success;"} >login</button></a>
+            <!--<center><a href="www.google.co.in"><button style="type:button; class:btn btn-success;"} >login</button></a>
         
             <a href="www.google.com"><button style="type:button; class:btn btn-success;">signup</button></a></center>
-            </div>
+--></div>
             </div>
         </form>
     </body>
