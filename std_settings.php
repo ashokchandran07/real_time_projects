@@ -55,6 +55,7 @@
 	</script>
 	</div>
 	<p id="error"></p>
+	<br>
 </body>
 </html>
 <?php
@@ -64,7 +65,7 @@ $email    = "";
 $errors = array(); 
 $_SESSION['success'] = "";
 
-$db = mysqli_connect('localhost', 'root', '', 'ucproject');
+$db = mysqli_connect('localhost', 'root', '', 'enterprise');
 
 if (isset($_POST['pass_change'])) {
     $password = mysqli_real_escape_string($db, $_POST['password']);

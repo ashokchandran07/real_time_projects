@@ -4,6 +4,10 @@
 <head>
 	<title>Company Login</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+    body{
+        background-color: #2a2a5b30;
+        }</style>
 </head>
 <body>
 	<div class="">

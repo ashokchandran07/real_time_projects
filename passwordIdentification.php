@@ -5,7 +5,7 @@ $link = mysqli_connect('localhost', 'root', '')
     or die('Could not connect: ' . mysql_error());
 echo '<br>Connected successfully<br>';
 $query = 'SELECT * FROM register_table';
-mysqli_select_db($link,'ucproject') or die('Could not select database');
+mysqli_select_db($link,'enterprise') or die('Could not select database');
 $array_pass=[];
 $array_name=[""];
 $i=0;

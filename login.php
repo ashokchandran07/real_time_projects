@@ -75,11 +75,11 @@
 		<span class="top"><a href="" title="Did you want to contact us?" target="_blank">Contact</a></span>
 		<span class="top"><a href="" title="visit for Help" target="_blank">Help</a></span>
 		<div class="topright">
-			<span class="top"><a href="signinu.php" title="Sign to get into User Dashboard" target="_self">Sign in as user</a></span>
+			<span class="top"><a href="signin_student.php" title="Sign to get into User Dashboard" target="_self">Sign in as user</a></span>
 			<span class="top"><a href="signin.php" title="Sign to get into company login" target="_self">Sign in</a></span>
 			<span class="top"><a href="signup.html" title="Register to View page" target="_self">Sign up</a></span>
 		</div>
 	</div>
-	<iframe class="iframe" src="ho_me.html" width="1345" height="500" style="background:#f9db48"></iframe>
+	<iframe class="iframe" src="iframe_home_login.html" width="1345" height="500" style="background:#f9db48"></iframe>
 </body>
 </html>			

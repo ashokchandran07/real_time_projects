@@ -6,9 +6,10 @@
 	$email    = "";
 	$errors = array(); 
 	$_SESSION['success'] = "";
+$dbname = "enterprise";
 
 	// connect to database
-	$db = mysqli_connect('localhost', 'root', '', 'ucproject');
+	$db = mysqli_connect('localhost', 'root', '', 'enterprise');
 
 	// REGISTER USER
 	if (isset($_POST['reg_user'])) {
@@ -106,7 +107,7 @@
 			if($row==1)
 			{
 				echo "<script type='text/javascript'>alert('You are loggned in as company user');</script>";
-				include 'index123.php';
+				include 'pro_reg.php';
 			}
 			else {
 				array_push($errors, "Wrong username/password combination");

@@ -10,7 +10,7 @@ $p_skills_array=[""];
 
 
 // connect to database
-$db = mysqli_connect('localhost', 'root', '', 'ucproject');
+$db = mysqli_connect('localhost', 'root', '', 'enterprise');
 $query = "SELECT project_id FROM stu_skill WHERE name='ashok'";
 //$results = mysqli_query($db,$query) or die('Query failed: ' . mysql_error());
 //$value = mysqli_fetch_assoc($results);
