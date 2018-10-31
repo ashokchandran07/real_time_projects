@@ -3,12 +3,12 @@ input {
     height: 30px;
     margin-top: 10px;
     border-radius: 3px;
-    padding: 2px;
+    padding: 20px;
     box-shadow: 0px 1px 1px 0px darkgray;
 }
 
 .innerdiv {
-    width: 65%;
+    width: 55%;
     float: left;
 }
 
@@ -28,7 +28,9 @@ body {
     overflow-x: hidden;
     background: url(/real_time_projects/images1/bg.jpg) no-repeat 0px 0px;
     background-size: cover;
+
 }
+
 
 .phpkida-main h2 {
     color: #8b5c7e;
@@ -40,14 +42,15 @@ body {
 }
 
 .phpkida-main {
-    width: 70%;
+    width: 25%;
     margin: 5em auto;
     background: rgba(171, 119, 157, 0.27);
-    padding: 42px 35px;
+    padding: 10px 35px;
+    padding-right: 30px;
 }
 
 input.ggg {
-    width: 100%;
+    width: 80%;
     padding: 15px 0px 15px 15px;
     border: 1px solid #fff;
     outline: none;
@@ -163,15 +166,15 @@ h4 input[type="checkbox"] {
     color: #fff !important;
 }
 
-@media(max-width:940px) {
+@media(max-width:640px) {
     .phpkida-main {
-        width: 50%;
+        width: 20%;
     }
 }
 
-@media(max-width:550px) {
+@media(max-width:450px) {
     .phpkida-main {
-        width: 90%;
+        width: 20%;
         padding: 5%;
     }
     input.ggg {
